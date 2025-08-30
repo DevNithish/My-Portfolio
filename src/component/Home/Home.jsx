@@ -18,10 +18,8 @@ const Home = () => {
           <button>Contact Me!</button>
         </a>
       </div>
-      <img src="src/assets/me.png" alt="Nithish Kumar" />
-      
+      <img src="me.png" alt="profile-photo" />
     </div>
-    
   );
 };
 
