@@ -108,10 +108,10 @@ const About = () => {
                   <h3>Java Full Stack Development</h3>
                   <h4>Jspiders, Marathahalli</h4>
                   <h4>Jun-Present(2025)</h4>
-                  <div>
+                  <p>
                     Learned in Depth about technologies like Java, SQL, HTML,
                     CSS, Javascript
-                  </div>
+                  </p>
                 </div>
               </div>
             </div>
@@ -124,10 +124,10 @@ const About = () => {
                   <h3>Java Full Stack Intern</h3>
                   <h4>Pumo Technovations, Chennai</h4>
                   <h4>Jul-Aug 2024</h4>
-                  <div>
+                  <p>
                     Worked on a responsive Web Development Projects under the
                     guidance of MR.Raghuram
-                  </div>
+                  </p>
                 </div>
               </div>
             </div>
@@ -140,10 +140,10 @@ const About = () => {
                   <h3>Bachelor of Engineering (CSE)</h3>
                   <h4>University College of Engineering, Ariyalur</h4>
                   <h4>2021-2025</h4>
-                  <div>
+                  <p>
                     Gained strong foundations in programming, DSA, Databases,
                     OS, and Computer Networks.
-                  </div>
+                  </p>
                 </div>
               </div>
             </div>

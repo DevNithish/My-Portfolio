@@ -29,9 +29,8 @@
 .abtcnt h3 {
   line-height: 5rem;
 }
-.abtcnt h2 {
-  margin-left: -9rem;
-  /* letter-spacing: 3px; */
+.abtcnt #bl {
+  margin-left: -3rem;
 }
 .timeline {
   content: "";
@@ -73,8 +72,9 @@
 .tlcnt:hover {
   box-shadow: 0 0 30px rgb(147, 141, 133);
 }
-#bl{
+#bl {
   color: black;
+  margin-left: 1px;
 }
 .tlcnt h3 {
   margin: -1rem 0;
@@ -125,4 +125,27 @@
   background-color: rgb(244, 235, 222);
   box-shadow: 0 0 15px rgb(160, 153, 144);
   transition: 0.5s ease;
+}
+
+/* Mobile Styles */
+
+@media (max-width: 900px) {
+  .skill {
+    width: 100vw;
+  }
+  .cir {
+    margin: 10px 0;
+  }
+  /* Education */
+
+  .timeline {
+    left: 0;
+  }
+  .left {
+    left: 2rem;
+    text-align: start;
+  }
+  .tlcnt {
+    width: 80vw;
+  }
 }

@@ -4,54 +4,54 @@ const Contact = () => {
   return (
     <div id="Contact">
       <section id="contact">
-        <div class="container fs-4 ">
-          <h2 class="section-title text-center">Get in Touch</h2>
-          <p class="text-center mb-5">
+        <div className="container fs-4 ">
+          <h2 className="section-title text-center">Get in Touch</h2>
+          <p className="text-center mb-5">
             I’m always open to discussing opportunities, collaborations, or
             exciting projects. Let’s build something amazing together!
           </p>
-          <div class="row">
-            <div class="col-md-6">
+          <div className="row">
+            <div className="col-md-6">
               <form
                 action="mailto:nithish10vln@gmail.com"
                 method="post"
-                enctype="text/plain"
-                class="p-4 contact-form"
+                encType="text/plain"
+                className="p-4 contact-form"
               >
-                <div class="mb-3">
-                  <label class="form-label mb-0">Name</label>
+                <div className="mb-3">
+                  <label className="form-label mb-0">Name</label>
                   <input
                     type="text"
-                    class="form-control"
+                    className="form-control"
                     name="name"
                     required
                   />
                 </div>
-                <div class="mb-3">
-                  <label class="form-label mb-0">Email</label>
+                <div className="mb-3">
+                  <label className="form-label mb-0">Email</label>
                   <input
                     type="email"
-                    class="form-control"
+                    className="form-control"
                     name="email"
                     required
                   />
                 </div>
-                <div class="mb-3">
-                  <label class="form-label ">Message</label>
+                <div className="mb-3">
+                  <label className="form-label ">Message</label>
                   <textarea
-                    class="form-control"
+                    className="form-control"
                     rows="4"
                     name="message"
                     required
                   ></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary w-100">
+                <button type="submit" className="btn btn-primary w-100">
                   Send
                 </button>
               </form>
             </div>
             {/* <div className="col-md-1"></div> */}
-            <div class="col-md-6  d-flex flex-column justify-content-center align-items-center">
+            <div className="col-md-6  d-flex flex-column justify-content-center align-items-center">
               <p>
                 <strong>Email : </strong>
                 <a href="mailto:nithish10vln@gmail.com">
@@ -68,7 +68,7 @@ const Contact = () => {
                   linkedin.com/in/nikux30
                 </a>
               </p>
-              <div class="social-icons mt-3">
+              <div className="social-icons mt-3">
                 <a href="https://linkedin.com/in/nikux30">
                   <img src="linkedinIcon.png" alt="" />
                 </a>
