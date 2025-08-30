@@ -1,0 +1,54 @@
+.bdy {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 100vh;
+  /* padding: 0 10% ; */
+}
+
+.bdy img {
+  height: 50vh;
+  border-radius: 50%;
+  object-fit: cover;
+  /* background:linear-gradient(45deg,red,red,blue,yellow,orange,red,red,red,blue,yellow,orange,red,blue,yellow,orange, black,red,blue,yellow,orange, blue,black,red,blue,yellow,orange,red,blue,yellow,orange,red,blue,yellow,red,red,blue,yellow,orange,red,blue,yellow,orange, black,red,blue,yellow,orange, blue,black,red,blue,yellow,orange,red,blue,yellow,orange,red,blue,yellow,blue,yellow,orange, black,red,blue,yellow,orange, blue,black,red,blue,yellow,orange,red,blue,yellow,orange,red,blue,yellow,red,red,blue,yellow,orange,red,red,red,blue,yellow,orange,red,blue,yellow,orange, black,red,blue,yellow,orange, blue,black,red,blue,yellow,orange,red,blue,yellow,orange,red,blue,yellow,red,red,blue,yellow,orange,red,blue,yellow,orange, black,red,blue,yellow,orange, blue,black,red,blue,yellow,orange,red,blue,yellow,orange,red,blue,yellow,blue,yellow,orange, black,red,blue,yellow,orange, blue,black,red,blue,yellow,orange,red,blue,yellow,orange,red,blue,yellow,red,red,blue,yellow,orange,red,red,red,blue,yellow,orange,red,blue,yellow,orange, black,red,blue,yellow,orange, blue,black,red,blue,yellow,orange,red,blue,yellow,orange,red,blue,yellow,red,red,blue,yellow,orange,red,blue,yellow,orange, black,red,blue,yellow,orange, blue,black,red,blue,yellow,orange,red,blue,yellow,orange,red,blue,yellow,blue,yellow,orange, black,red,blue,yellow,orange, blue,black,red,blue,yellow,orange,red,blue,yellow,orange,red,blue,yellow,orange); */
+}
+.bdy p {
+  font-size: 3vh;
+  line-height: 2;
+  max-width: 50rem;
+  margin-top: 2rem;
+  color: #444;
+  font-weight: 500;
+  letter-spacing: 0.08rem;
+  text-indent: 4rem;
+}
+
+.name {
+  color: black;
+  font-size: 10vh;
+}
+
+.name span {
+  color: blue;
+}
+
+.bdy h3 {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.bdy button {
+  display: block;
+  color: white;
+  background-color: blue;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  margin: 3rem auto 0;
+}
+
+.bdy a {
+  text-decoration: none;
+}

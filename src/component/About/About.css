@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+.abt {
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  /* justify-content: center; */
+  position: relative;
+  /* margin-top: 10rem; */
+  padding-top: 10vh;
+  min-height: 100vh;
+  margin-left: 7vw;
+}
+
+.abt h2 {
+  color: blue;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 1000;
+  /* letter-spacing: 7px; */
+}
+
+.abtcnt {
+  font-size: 3vh;
+  margin: 5vh 10% 0 10%;
+  line-height: 5vh;
+  /* letter-spacing: 0.2rem; */
+}
+
+.abtcnt h3 {
+  line-height: 5rem;
+}
+.abtcnt h2 {
+  margin-left: -9rem;
+  /* letter-spacing: 3px; */
+}
+.timeline {
+  content: "";
+  position: relative;
+  left: 50%;
+  top: 5rem;
+  width: 0.3rem;
+  min-height: 70vh;
+  max-height: max-content;
+  background-color: rgba(0, 0, 255, 0.541);
+  border-radius: 5px;
+}
+.timeline-dot {
+  position: relative;
+  left: -0.25rem;
+  content: "";
+  background-color: rgb(0, 0, 255);
+  border-radius: 50%;
+  height: 0.8rem;
+  width: 0.8rem;
+}
+.pack {
+  margin: 300px 0;
+}
+.pack:first-child {
+  margin-top: 0;
+}
+.tlcnt {
+  position: relative;
+  top: -0.7rem;
+  left: 2rem;
+  background-color: white;
+  width: 30rem;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  /* letter-spacing: 0; */
+}
+
+.tlcnt:hover {
+  box-shadow: 0 0 30px rgb(147, 141, 133);
+}
+#bl{
+  color: black;
+}
+.tlcnt h3 {
+  margin: -1rem 0;
+  color: blue;
+}
+
+.left {
+  position: absolute;
+  left: -35rem;
+  text-align: end;
+}
+
+.skill {
+  display: flex;
+  justify-content: space-evenly;
+  width: 70vw;
+  text-align: center;
+  flex-wrap: wrap;
+  align-self: center;
+  margin: 0 auto;
+}
+.secskill h2 {
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+  /* letter-spacing: 0px; */
+  font-size: 2rem;
+}
+.cir {
+  margin: 2rem 4rem;
+}
+
+.skill-cir {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3rem;
+  margin: 5px;
+}
+.skill-cir img {
+  height: 3rem;
+  width: 3rem;
+}
+.skill-cir:hover {
+  background-color: rgb(244, 235, 222);
+  box-shadow: 0 0 15px rgb(160, 153, 144);
+  transition: 0.5s ease;
+}

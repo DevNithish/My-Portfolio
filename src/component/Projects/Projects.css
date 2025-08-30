@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+#Projects {
+  padding-top: 6rem;
+  font-family: "DM Sans", sans-serif;
+  padding-bottom: 8rem;
+}
+
+#Projects h2 {
+  color: blue;
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  margin-left: 7vw;
+}
+
+.stack span {
+  padding: 5px;
+  border-radius: 1rem;
+  border: 1px solid black;
+  background-color: rgba(0, 247, 255, 0.26);
+  position: relative;
+  top: 10px;
+  margin: 5px;
+}
+
+.all-proj {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.proj-card {
+  width: 90vw;
+  min-height: 15rem;
+  background-color: white;
+  margin: 2rem auto;
+  display: flex;
+  border-radius: 0.5rem;
+}
+
+#Projects h3 {
+  color: blue;
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+.cont p {
+  margin: 1rem;
+  text-indent: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
+.cont .stack {
+  margin: 1rem;
+}
+.proj-card img {
+  height: 15rem;
+  min-width: 20rem;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+.proj-card:hover {
+  box-shadow: 0 0 1.5rem black;
+  width: 91vw;
+  transition: 0.3s ease;
+}
+#left {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#left img {
+  border-radius: 0 0.5rem 0.5rem 0;
+}
