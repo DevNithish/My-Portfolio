@@ -1,39 +1,64 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./Navbar.css";
 import Hamburger from "../hamburger/Hamburger";
-// import ThemeToggle from "../Home/toggleTheme";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
+  const handleLinkClick = () => {
+    setOpen(false);
+  };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        open &&
+        !event.target.closest(".links") &&
+        !event.target.closest(".ham")
+      ) {
+        setOpen(false);
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+    return () => document.removeEventListener("click", handleClickOutside);
+  }, [open]);
+
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [open]);
+
   return (
-    <div className="navbar">
+    <nav className="navbar">
       <h1>
         nikux<span>.</span>
       </h1>
-
-      {/* Links */}
       <div className={`links ${open ? "open" : ""}`}>
-        <a href="#Home" onClick={() => setOpen(!open)}>
+        <a href="#home" onClick={handleLinkClick}>
           Home
         </a>
-        <a href="#About" onClick={() => setOpen(!open)}>
+        <a href="#about" onClick={handleLinkClick}>
           About
         </a>
-        <a href="#Projects" onClick={() => setOpen(!open)}>
+        <a href="#projects" onClick={handleLinkClick}>
           Projects
         </a>
-        <a href="#Contact" onClick={() => setOpen(!open)}>
+        <a href="#contact" onClick={handleLinkClick}>
           Contact
         </a>
-        {/* <ThemeToggle /> */}
       </div>
-
-      {/* Hamburger (pass props) */}
       <div className="ham">
         <Hamburger open={open} setOpen={setOpen} />
       </div>
-    </div>
+    </nav>
   );
 };
 

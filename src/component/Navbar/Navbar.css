@@ -4,6 +4,7 @@
   background-color: rgba(255, 255, 255, 0.571);
   position: fixed;
   width: 100%;
+  max-width: 100vw;
   backdrop-filter: blur(5px);
   z-index: 10;
   font-family: "DM Sans", sans-serif;
@@ -12,20 +13,33 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
 }
 
 .navbar h1 {
   color: blue;
-  padding: 10px;
-  padding-left: 7rem;
+  padding: 10px 0;
+  margin: 0;
 }
+
 .navbar h1 span {
   color: rgb(244, 244, 0);
 }
 
 .navbar .links {
-  padding-right: 4.5rem;
-  font-size: large;
+  display: flex;
+  gap: 1rem;
+}
+
+.links a {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  padding: 5px 15px;
+  transition: color 0.3s ease;
 }
 
 .links a::after {
@@ -42,52 +56,74 @@
 .links a:hover::after {
   width: 70%;
 }
-.links :hover {
-  color: blue;
-  transition: 0.5s ease;
-}
 
-.navbar a {
-  position: relative;
-  text-decoration: none;
-  color: black;
-  padding: 5px 15px;
+.links a:hover {
+  color: blue;
 }
 
 .ham {
   display: none;
-  z-index: 10;
+  z-index: 11;
 }
 
+/* Mobile Styles */
 @media (max-width: 900px) {
   .navbar {
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1.5rem;
   }
-  .links {
-    position: absolute;
-    right: 0;
+
+  .navbar .links {
+    position: fixed;
     top: 0;
-    display: none;
-    background-color: white;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
     flex-direction: column;
-    /* z-index: 1; */
-    padding: 3.5rem 1.7rem 0.7rem 0.7rem;
-    /* width: 30%; */
-    align-items: center;
-    backdrop-filter: blur(5px);
-    border-radius: 0.6rem;
+    padding: 5rem 2rem 2rem 2rem;
+    height: 100vh;
+    width: 70%;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    margin: 0;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
   }
-  .navbar h1 {
-    padding: 0;
+
+  .links.open {
+    transform: translateX(0);
   }
-  .navbar .ham {
-    display: block;
-    margin: -1rem;
+
+  .links a {
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1.2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
+
+  .links a:last-child {
+    border-bottom: none;
+  }
+
   .links a::after {
     display: none;
   }
-  .links.open {
-    display: flex;
+
+  .navbar .ham {
+    display: block;
+  }
+
+  .navbar h1 {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    width: 100vw;
+    max-width: 100%;
   }
 }

@@ -10,12 +10,11 @@
 .hamburger span {
   display: block;
   height: 3px;
-  background: black;
+  background: blue;
   border-radius: 2px;
   transition: all 0.3s ease;
 }
 
-/* Animate to X */
 .hamburger.open span:nth-child(1) {
   transform: rotate(45deg) translate(6px, 5px);
 }

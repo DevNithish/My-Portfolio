@@ -2,7 +2,7 @@ import "./Home.css";
 
 const Home = () => {
   return (
-    <div id="Home" className="bdy">
+    <div id="home" className="bdy">
       <div className="text">
         <h1 className="name">
           I'm <span>Nithish Kumar</span>
@@ -18,7 +18,7 @@ const Home = () => {
           <button>Contact Me!</button>
         </a>
       </div>
-      <img src="me.png" alt="profile-photo" />
+      <img src="me.png" alt="Nithish Kumar - Web Developer" />
     </div>
   );
 };

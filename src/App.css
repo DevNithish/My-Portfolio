@@ -1,13 +1,50 @@
+:root {
+  --primary-bg: rgb(244, 235, 222);
+  --scrollbar-color: blue;
+  --scrollbar-hover: rgb(0, 0, 150);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
 body {
-  background-color: rgb(244, 235, 222);
-  height: fit-content;
+  overflow-x: hidden;
+  width: 100vw;
+  max-width: 100%;
+}
+
+body {
+  background-color: var(--primary-bg);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 #root {
-  padding: 0;
-  margin: 0;
+  width: 100vw;
+  max-width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
+#App,
+#Navbar,
+#Home,
+#About,
+#Projects,
+#Contact {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
 ::-webkit-scrollbar {
   width: 8px;
   height: 0px;
@@ -18,13 +55,13 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: blue;
+  background: var(--scrollbar-color);
   border-radius: 5px;
   border: 2px solid transparent;
   background-clip: padding-box;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(0, 0, 75);
+  background: var(--scrollbar-hover);
   background-clip: padding-box;
 }
